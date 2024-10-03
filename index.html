@@ -1,16 +1,16 @@
 <!--
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
-[  ] Three Images
+[Yes] Two Element Selectors
+[Yes] Two ID Selectors
+[Yes] Two Class Selectors
+[Yes] Three Images
 
 Select ONE Additional Feature to Add  
-[ yes ] Feature 1 - Include a Background Image
+[ Yes ] Feature 1 - Include a Background Image
 [ no ] Feature 2 - Include Border Radius CSS Property
 [ no ] Feature 3 - Include Horizontal Line
 [ no ] Feature 4 - Embed YouTube Video
-[ no ] Feature 5 - Include Border CSS Property
+[ Yes ] Feature 5 - Include Border CSS Property
 -->
     
 <!DOCTYPE HTML>
@@ -27,12 +27,26 @@ Select ONE Additional Feature to Add
         
         html{height: 100%;
         width: 100%;}
+        html{border:10px solid rgb(240, 223, 232);}
         
         #title{color: rgb(114,93,59);}
         
-        h2 {color: rgb(255, 188, 227);}
-        h2 {background-color: rgb(255, 255, 255);}
+        .Flavors{color: rgb(240, 223, 232);}
+        .Flavors{background-color: rgb(255, 255, 255);}
       
+        .Pairings {background-color: rgb(236, 213, 195);}
+        .Pairings {color: rgb(114, 93, 59)}
+  
+        .First-List {background-color: rgb(182, 147, 119);}
+        .Second-List {background-color: rgb(137, 108, 86);}
+        .Last-List {background-color: rgb(100, 77, 59);}
+        
+        img {border: 8px solid rgb(255, 229, 240);}
+        img {float:right;}
+        
+        h1 {text-align:center ;}
+        
+        
       </style>
    
   </head>
@@ -41,18 +55,59 @@ Select ONE Additional Feature to Add
 
       <h1 id="title"> Best Fall Coffee Flavors</h1>
       
-      <h2>
-        Brown Sugar
-      </h2>
+        <img src="https://cheneetoday.com/wp-content/uploads/2024/01/shaken-espresso-recipe-1.jpg" width="125" id="Brown-Sugar">
       
       <h2>
-        Pumpkin Spice
+        <mark class="Flavors">Brown Sugar</mark>
       </h2>
       
+    <h3>
+     <mark class="Pairings">Goes great with....</mark> 
+      </h3>
+           
+      <p>
+        <ul>
+          <li><mark class="First-List">Caramel Syrup</mark></li>
+  <li><mark class="Second-List">Shaken Espresso</mark></li>
+  <li><mark class="Last-List">Vanilla Syrup</mark></li>
+      </ul>
+      </p>
+      
+   <img src="https://coffeecopycat.com/wp-content/uploads/2023/10/IcedPumpkinSpiceLatte-1200-x-1200-500x500.jpg" width="125">
+  
       <h2>
-        
+        <mark class="Flavors">Pumpkin Spice</mark>
       </h2>
+  
+   <h3>
+      <mark class="Pairings">Goes great with....</mark>
+      </h3>
       
+  <p>
+    <ul>
+      <li><mark class="First-List">Espresso Latte</mark></li>
+      <li><mark class="Second-List">Chai Tea</mark></li>
+      <li><mark class="Last-List">Cinnamon or Nutmeg</mark></li>
+  </ul>
+  </p>
+
+<img src="https://annikaeats.com/wp-content/uploads/2022/10/DSC_0687-500x375.jpg?crop=1" width="125">
+  
+      <h2>
+        <mark class="Flavors">Caramel Apple</mark>
+      </h2>
+
+   <h3>
+      <mark class="Pairings">Goes great with....</mark>
+      </h3>
+      
+<p>
+  <ul>
+    <li> <mark class="First-List">Macchiato</mark></li>
+    <li><mark class="Second-List">Cinnamon</mark></li>
+    <li><mark class="Last-List">Cold Foam</mark></li>
+</ul>
+</p>
         
     </body>
 </html>
