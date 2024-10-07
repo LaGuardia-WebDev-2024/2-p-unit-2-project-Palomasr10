@@ -26,26 +26,44 @@ Select ONE Additional Feature to Add
         background-repeat: no-repeat;}
         
         html{height: 100%;
-        width: 100%;}
-        html{border:10px solid rgb(240, 223, 232);}
+        width: 100%;
+          border:10px solid rgb(240, 223, 232);}
         
         #title{color: rgb(114,93,59);}
         
-        .Flavors{color: rgb(240, 223, 232);}
-        .Flavors{background-color: rgb(255, 255, 255);}
+        .Flavors{color: rgb(240, 223, 232);
+          background-color: rgb(255, 255, 255);}
       
-        .Pairings {background-color: rgb(236, 213, 195);}
-        .Pairings {color: rgb(114, 93, 59)}
+        .Pairings {background-color: rgb(236, 213, 195);
+          color: rgb(114, 93, 59)}
   
         .First-List {background-color: rgb(182, 147, 119);}
         .Second-List {background-color: rgb(137, 108, 86);}
         .Last-List {background-color: rgb(100, 77, 59);}
         
-        img {border: 8px solid rgb(255, 229, 240);}
-        img {float:right;}
+        img {border: 8px solid rgb(255, 229, 240);
+          float:right;}
         
         h1 {text-align:center ;}
         
+        #Where {color: rgb(75, 51, 29);}
+        
+          @list heart {
+    mso-level-number-format: bullet;
+    mso-level-text: ♥;
+  }
+  @media screen and ( -webkit-min-device-pixel-ratio:0 ) {
+    .heart { list-style: none; }
+    .heart:before {
+      content: '♥';
+      margin-left: -1.4em;
+    }
+    .heart span {
+      padding-left: .5em;
+    }
+    [class="x_heart"] { list-style: initial !important; }
+    [data-outlook-cycle] .heart { list-style: initial !important; }
+  }
         
       </style>
    
@@ -106,6 +124,18 @@ Select ONE Additional Feature to Add
     <li> <mark class="First-List">Macchiato</mark></li>
     <li><mark class="Second-List">Cinnamon</mark></li>
     <li><mark class="Last-List">Cold Foam</mark></li>
+</ul>
+</p>
+
+<h4>
+    Places to get these items:
+</h4>
+
+<p>
+  <ul  id="Where" style="Margin:0; Margin-left: 25px; padding:0; font-family: Arial, sans-serif;" type="disc">
+    <li class="heart" style="mso-list:heart;"> <strong>Any coffee shop</strong></li>
+    <li class="heart" style="mso-list:heart;"> <strong>Trader Joes</strong></li>
+    <li class="heart" style="mso-list:heart;"> <strong>Farmers Markets</strong></li>
 </ul>
 </p>
         
