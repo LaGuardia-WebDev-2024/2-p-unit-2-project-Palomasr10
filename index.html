@@ -1,16 +1,16 @@
 <!--
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
-[  ] Three Images
+[Yes] Two Element Selectors
+[Yes] Two ID Selectors
+[Yes] Two Class Selectors
+[Yes] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a Background Image
+[ Yes ] Feature 1 - Include a Background Image
 [ no ] Feature 2 - Include Border Radius CSS Property
 [ no ] Feature 3 - Include Horizontal Line
 [ no ] Feature 4 - Embed YouTube Video
-[ no ] Feature 5 - Include Border CSS Property
+[ Yes ] Feature 5 - Include Border CSS Property
 -->
     
 <!DOCTYPE HTML>
@@ -18,9 +18,131 @@ Select ONE Additional Feature to Add
     <head>
         <meta charset="utf-8">
         <title>Unit 2 Project</title>
-    </head>
+      
+      <style>
+        
+        body{background-image:url(https://i.pinimg.com/736x/8f/25/9d/8f259d84af04b9651f27bc77c40174d0.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;}
+        
+        html{height: 100%;
+        width: 100%;
+          border:10px solid rgb(240, 223, 232);}
+        
+        #title{color: rgb(114,93,59);}
+        
+        .Flavors{color: rgb(240, 223, 232);
+          background-color: rgb(255, 255, 255);}
+      
+        .Pairings {background-color: rgb(236, 213, 195);
+          color: rgb(114, 93, 59)}
+  
+        .First-List {background-color: rgb(182, 147, 119);}
+        .Second-List {background-color: rgb(137, 108, 86);}
+        .Last-List {background-color: rgb(100, 77, 59);}
+        
+        img {border: 8px solid rgb(255, 229, 240);
+          float:right;}
+        
+        h1 {text-align:center ;}
+        
+        #Where {color: rgb(75, 51, 29);}
+        
+        #Get {background-color: rgb(255, 255, 255);
+        color: rgb(199, 162, 181);}
+        
+        .Trader {background-color: rgb(247,209,227);}
+        
+          @list heart {
+    mso-level-number-format: bullet;
+    mso-level-text: ♥;
+  }
+  @media screen and ( -webkit-min-device-pixel-ratio:0 ) {
+    .heart { list-style: none; }
+    .heart:before {
+      content: '♥';
+      margin-left: -1.4em;
+    }
+    .heart span {
+      padding-left: .5em;
+    }
+    [class="x_heart"] { list-style: initial !important; }
+    [data-outlook-cycle] .heart { list-style: initial !important; }
+  }
+        
+      </style>
+   
+  </head>
+  
     <body>
 
+      <h1 id="title"> Best Fall Coffee Flavors</h1>
+      
+        <img src="https://cheneetoday.com/wp-content/uploads/2024/01/shaken-espresso-recipe-1.jpg" width="125" id="Brown-Sugar">
+      
+      <h2>
+        <mark class="Flavors">Brown Sugar</mark>
+      </h2>
+      
+    <h3>
+     <mark class="Pairings">Goes great with....</mark> 
+      </h3>
+           
+      <p>
+        <ul>
+          <li><mark class="First-List">Caramel Syrup</mark></li>
+  <li><mark class="Second-List">Shaken Espresso</mark></li>
+  <li><mark class="Last-List">Vanilla Syrup</mark></li>
+      </ul>
+      </p>
+      
+   <img src="https://coffeecopycat.com/wp-content/uploads/2023/10/IcedPumpkinSpiceLatte-1200-x-1200-500x500.jpg" width="125">
+  
+      <h2>
+        <mark class="Flavors">Pumpkin Spice</mark>
+      </h2>
+  
+   <h3>
+      <mark class="Pairings">Goes great with....</mark>
+      </h3>
+      
+  <p>
+    <ul>
+      <li><mark class="First-List">Espresso Latte</mark></li>
+      <li><mark class="Second-List">Chai Tea</mark></li>
+      <li><mark class="Last-List">Cinnamon or Nutmeg</mark></li>
+  </ul>
+  </p>
+
+<img src="https://annikaeats.com/wp-content/uploads/2022/10/DSC_0687-500x375.jpg?crop=1" width="125">
+  
+      <h2>
+        <mark class="Flavors">Caramel Apple</mark>
+      </h2>
+
+   <h3>
+      <mark class="Pairings">Goes great with....</mark>
+      </h3>
+      
+<p>
+  <ul>
+    <li> <mark class="First-List">Macchiato</mark></li>
+    <li><mark class="Second-List">Cinnamon</mark></li>
+    <li><mark class="Last-List">Cold Foam</mark></li>
+</ul>
+</p>
+
+<h3>
+    <mark id="Get">Places to get these items:</mark>
+</h3>
+
+<p>
+  <ul  id="Where" style="Margin:0; Margin-left: 25px; padding:0; font-family: Arial, sans-serif;" type="disc">
+    <li class="heart" style="mso-list:heart;"> <strong><mark class="Trader">Any coffee shop</mark></strong></li>
+    <li class="heart" style="mso-list:heart;"> <strong><mark class="Trader">Trader Joes</mark></strong></li>
+    <li class="heart" style="mso-list:heart;"> <strong><mark class="Trader">Farmers Market</mark></strong></li>
+</ul>
+</p>
         
     </body>
 </html>
